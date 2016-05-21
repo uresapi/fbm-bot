@@ -23,7 +23,7 @@ func main() {
 
 func getPort() string {
 	if configuredPort := os.Getenv("PORT"); configuredPort == "" {
-		return "3000"
+		return "8080"
 	} else {
 		return configuredPort
 	}

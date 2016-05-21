@@ -22,7 +22,7 @@ var _ = Describe("Handlers", func() {
 
 	BeforeEach(func() {
 		resp = httptest.NewRecorder()
-		Url, err = url.Parse("http://localhost:3000")
+		Url, err = url.Parse("")
 		Expect(err).NotTo(HaveOccurred())
 
 		Url.Path += "webhook/"
